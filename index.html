@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado Técnico SENAI - SisBia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://logodownload.org/wp-content/uploads/2014/10/senai-logo-1.png" alt="SENAI" class="logo">
+            <h1>Avaliação Técnica SisBia</h1>
+            <div class="controls">
+                <button id="btn-shuffle" onclick="shuffleQuiz()">🔀 Embaralhar Tudo</button>
+                <div id="stats">Respondidas: <span id="count">0</span> / 40</div>
+            </div>
+        </header>
+
+        <main id="quiz-container">
+            <!-- Questões serão injetadas aqui -->
+        </main>
+
+        <section id="results" class="hidden">
+            <div class="result-card">
+                <h2>Resultado Final</h2>
+                <p id="score-text"></p>
+                <button onclick="location.reload()">Reiniciar Simulado</button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
